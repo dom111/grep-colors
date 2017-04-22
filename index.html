@@ -98,9 +98,10 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                 <p class="help-block">In some terminals, instead of bold fonts, brighter colours are used</p>
                             </div>
 -->
+                            <input type="hidden" name="colours" value="256"/>
+<!--
                             <h4>Colours</h4>
                             <div class="form-group">
-<!--
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="colours" value="16">
@@ -113,7 +114,6 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         88
                                     </label>
                                 </div>
--->
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="colours" value="256" checked>
@@ -127,6 +127,7 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                     </label>
                                 </div>
                             </div>
+-->
 
 <!--
                             <div class="form-group">
@@ -157,19 +158,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -249,19 +250,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -341,19 +342,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -433,19 +434,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -525,19 +526,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -617,19 +618,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -709,19 +710,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -802,19 +803,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">
@@ -895,19 +896,19 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                                         <label>Background</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="bg-default" value="49"> Default
+                                                <input type="checkbox" name="bg-default" value="49" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="bg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="form-group">
                                         <label>Text</label>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="fg-default" value="39"> Default
+                                                <input type="checkbox" name="fg-default" value="39" checked> Default
                                             </label>
                                         </div>
-                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default">
+                                        <input type="color" name="fg" class="form-control colorpicker" placeholder="Default" style="display: none;">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 bold">

@@ -77,12 +77,22 @@
                 selector = data[0],
                 styles = parse.parseStyles(data[1]);
 
-                $('.' + selector).each(function() {
-                    var classes = selector;
+                $('.' + selector).removeAttr('style').each(function() {
+                    var classes = selector,
+                    el = $(this);
 
                     $.each(styles, function(style) {
                         if (style.match(/bg|fg/)) {
                             classes += ' ' + style + '-' + styles[style];
+
+                            if (styles[style].match(/^true-/)) {
+                                if (style.match(/bg/)) {
+                                    el.css('background-color', parse.rgbToHex(styles[style].replace(/^true-/).split(/-/)));
+                                }
+                                else if (style.match(/fg/)) {
+                                    el.css('color', parse.rgbToHex(styles[style].replace(/^true-/).split(/-/)));
+                                }
+                            }
                         }
                         else if (styles[style]) {
                             classes += ' ' + style;
