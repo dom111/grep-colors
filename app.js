@@ -180,10 +180,10 @@
                 }
 
                 if (this.name === 'bg' || this.name === 'fg') {
-                    if ($('[name="colours"]:checked').val() === '16') {
+                    if ($('[name="colours"]:checked, [name="colours"][type="hidden"]').val() === '16') {
                         style[this.name] = parse.rgbToTerm16(parse.hexToRgb(value), this.name == 'bg');
                     }
-                    else if ($('[name="colours"]:checked').val() === '256') {
+                    else if ($('[name="colours"]:checked, [name="colours"][type="hidden"]').val() === '256') {
                         style[this.name] = parse.simplifyColour('256-' + parse.rgbToTerm256(parse.hexToRgb(value)), this.name == 'bg');
                     }
                     else {
