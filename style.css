@@ -9,3 +9,4 @@ pre:hover a.btn { display: block; }
 
 .builder .blocks { overflow: hidden; }
 .builder .blocks .block { min-height: 38em; }
+footer { text-align: center; }

@@ -10,7 +10,7 @@
     <body>
         <div class="jumbotron">
             <div class="container">
-                <h1><code>GREP_COLORS</code> utility <span class="version">v0.1</span></h1>
+                <h1><code>GREP_COLORS</code> utility <span class="version">v0.2</span></h1>
                 <p>Paste in a <code>GREP_COLORS</code> string to preview it.</p>
                 <p>Tweak the style the way you want, with a live preview of how it'll look!</p>
                 <p>Note that currently this only supports changing <code>mt=</code> but will preview <code>ms=</code> and <code>mc=</code>.</p>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="form-group label-floating">
-                        <label for="input" class="control-label">Paste your <code><abbr title="Run &nbsp; echo $GREP_COLORS &nbsp; in your terminal to see your current setting.">GREP_COLORS</abbr></code>, or load an example: <a href="#load" class="load-example" data-content="mt=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36">default</a>, <a href="#load" class="load-example" data-content="sl=97;48;5;236:cx=37;40:mt=30;48;5;186:fn=38;5;197:ln=38;5;154:bn=38;5;141:se=38;5;81">monokai-based</a>.</label>
+                        <label for="input" class="control-label">Paste your <code><abbr title="Run &nbsp; echo $GREP_COLORS &nbsp; in your terminal to see your current setting.">GREP_COLORS</abbr></code>, load an example (<a href="#load" class="load-example" data-content="mt=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36">default</a>, <a href="#load" class="load-example" data-content="sl=97;48;5;236:cx=37;40:mt=30;48;5;186:fn=38;5;197:ln=38;5;154:bn=38;5;141:se=38;5;81">monokai-based</a>), or <a href="#style">configure your own</a>.</label>
                         <textarea id="input" class="form-control" rows="1"></textarea>
                     </div>
 
@@ -143,7 +143,7 @@ $ grep -binHIC2 document ../bash-ps1/app.js
             </section>
 
             <section class="builder panel panel-default">
-                <div class="panel-heading panel-heading-lg">
+                <div class="panel-heading panel-heading-lg" id="style">
                     <h2 class="panel-title panel-title-lg">Style</h2>
                 </div>
                 <div class="panel-body">
@@ -982,6 +982,10 @@ $ grep -binHIC2 document ../bash-ps1/app.js
                 </div>
             </section>
         </div>
+
+        <footer>
+            <p>Copyright 2017-2018 &copy; <a href="https://dom.hastin.gs/">Dom Hastings</a>
+        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
